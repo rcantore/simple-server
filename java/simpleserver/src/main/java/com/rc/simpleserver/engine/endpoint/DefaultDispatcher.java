@@ -10,4 +10,9 @@ public class DefaultDispatcher implements IEndPointDispatcher {
                 "    \"msg\": \"default implementation\"\n" +
                 "}\n";
     }
+
+    @Override
+    public String dispatchGet() {
+        return dispatch();
+    }
 }

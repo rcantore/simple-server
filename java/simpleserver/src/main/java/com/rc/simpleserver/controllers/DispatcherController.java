@@ -7,8 +7,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
-
 @RestController
 public class DispatcherController {
     private static final Logger logger = LoggerFactory.getLogger(DispatcherController.class);
@@ -21,7 +19,7 @@ public class DispatcherController {
         logger.info("endpoint " + endPoint);
         IEndPointDispatcher endPointDispatcher = dispatcherFactory.getEndPointDispatcher(endPoint);
 
-        return endPointDispatcher.dispatch();
+        return endPointDispatcher.dispatchGet();
     }
 
 }
