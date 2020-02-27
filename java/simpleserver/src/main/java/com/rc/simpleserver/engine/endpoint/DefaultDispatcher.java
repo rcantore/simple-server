@@ -1,4 +1,13 @@
 package com.rc.simpleserver.engine.endpoint;
 
-public class DefaultDispatcher {
+import org.springframework.stereotype.Component;
+
+@Component
+public class DefaultDispatcher implements IEndPointDispatcher {
+    @Override
+    public String dispatch() {
+        return "{\n" +
+                "    \"msg\": \"default implementation\"\n" +
+                "}\n";
+    }
 }
