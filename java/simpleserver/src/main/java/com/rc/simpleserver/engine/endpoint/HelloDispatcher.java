@@ -36,7 +36,8 @@ public class HelloDispatcher implements IEndPointDispatcher {
             for (Resource resource : resources) {
                 InputStream inputStream = resource.getInputStream();
                 // Do something with the input stream
-                logger.info(" egdasygs!");
+                logger.info(" egdasygs!" + resource.getFilename());
+                logger.info(" egdasygs!" + resource.getDescription());
                 String result = new BufferedReader(new InputStreamReader(inputStream))
                         .lines().collect(Collectors.joining("\n"));
                 logger.info(result);
