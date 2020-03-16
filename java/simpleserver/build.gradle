@@ -4,6 +4,12 @@ plugins {
 	id 'java'
 }
 
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
 group = 'com.rc'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
