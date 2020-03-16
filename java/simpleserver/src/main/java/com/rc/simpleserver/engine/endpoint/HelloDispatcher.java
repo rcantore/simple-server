@@ -11,10 +11,7 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Objects;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @Component
@@ -35,12 +32,22 @@ public class HelloDispatcher implements IEndPointDispatcher {
 
             for (Resource resource : resources) {
                 InputStream inputStream = resource.getInputStream();
+
                 // Do something with the input stream
-                logger.info(" egdasygs!" + resource.getFilename());
-                logger.info(" egdasygs!" + resource.getDescription());
-                String result = new BufferedReader(new InputStreamReader(inputStream))
-                        .lines().collect(Collectors.joining("\n"));
-                logger.info(result);
+                logger.info("is " + resource.getFilename());
+                logger.info("is " + resource.getURI().toString());
+                logger.info("is " + resource.getURL().toString());
+                InputStreamReader isr = new InputStreamReader(inputStream);
+                BufferedReader br = new BufferedReader(isr);
+                StringBuffer sb = new StringBuffer();
+                String line;
+                while ((line = br.readLine()) != null) {
+                    sb.append(line);
+                }
+                br.close();
+                isr.close();
+                inputStream.close();
+                logger.info("sb " + sb.toString());
             }
         } catch (IOException e) {
             e.printStackTrace();
