@@ -2,8 +2,8 @@ package com.rc.simpleserver.engine.endpoint;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
-import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.stereotype.Component;
 
 import java.io.*;
@@ -11,7 +11,10 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @Component
@@ -26,34 +29,43 @@ public class HelloDispatcher implements IEndPointDispatcher {
 
     @Override
     public String dispatchGet() {
-        PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+        String path = "templates/endpoint/hello/get";
+
+        List<String> resourceFiles = null;
         try {
-            Resource[] resources = resolver.getResources("classpath:templates/endpoint/hello/get");
-
-            for (Resource resource : resources) {
-                InputStream inputStream = resource.getInputStream();
-
-                // Do something with the input stream
-                logger.info("is " + resource.getFilename());
-                logger.info("is " + resource.getURI().toString());
-                logger.info("is " + resource.getURL().toString());
-                InputStreamReader isr = new InputStreamReader(inputStream);
-                BufferedReader br = new BufferedReader(isr);
-                StringBuffer sb = new StringBuffer();
-                String line;
-                while ((line = br.readLine()) != null) {
-                    sb.append(line);
-                }
-                br.close();
-                isr.close();
-                inputStream.close();
-                logger.info("sb " + sb.toString());
-            }
+            resourceFiles = getResourceFiles(path);
+            resourceFiles.forEach(s -> logger.info("arhicve " + s));
         } catch (IOException e) {
             e.printStackTrace();
         }
 
         return "{}";
+    }
+    private List<String> getResourceFiles(String path) throws IOException {
+        List<String> filenames = new ArrayList<>();
+
+        try (
+                InputStream in = getResourceAsStream(path);
+                BufferedReader br = new BufferedReader(new InputStreamReader(in))) {
+            String resource;
+
+            while ((resource = br.readLine()) != null) {
+                filenames.add(resource);
+            }
+        }
+
+        return filenames;
+    }
+
+    private InputStream getResourceAsStream(String resource) {
+        final InputStream in
+                = getContextClassLoader().getResourceAsStream(resource);
+
+        return in == null ? getClass().getResourceAsStream(resource) : in;
+    }
+
+    private ClassLoader getContextClassLoader() {
+        return Thread.currentThread().getContextClassLoader();
     }
 
     @Deprecated
