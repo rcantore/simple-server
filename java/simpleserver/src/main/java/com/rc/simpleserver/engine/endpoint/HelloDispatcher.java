@@ -2,10 +2,11 @@ package com.rc.simpleserver.engine.endpoint;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.stereotype.Component;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
@@ -13,6 +14,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Objects;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @Component
@@ -27,10 +29,32 @@ public class HelloDispatcher implements IEndPointDispatcher {
 
     @Override
     public String dispatchGet() {
+        PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+        try {
+            Resource[] resources = resolver.getResources("classpath:templates/endpoint/hello/get");
+
+            for (Resource resource : resources) {
+                InputStream inputStream = resource.getInputStream();
+                // Do something with the input stream
+                logger.info(" egdasygs!");
+                String result = new BufferedReader(new InputStreamReader(inputStream))
+                        .lines().collect(Collectors.joining("\n"));
+                logger.info(result);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return "{}";
+    }
+
+    @Deprecated
+    public String dispatchGetOriginal() {
         URL url = this.getClass().getClassLoader().getResource("templates/endpoint/hello/get");
         File file;
         try {
             assert url != null;
+            logger.debug("url " + url);
             file = new File(url.toURI());
         } catch (URISyntaxException e) {
             file = new File(url.getPath());
