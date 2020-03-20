@@ -22,4 +22,12 @@ public class DispatcherController {
         return endPointDispatcher.dispatchGet();
     }
 
+    @RequestMapping(value="/{endPoint}*/**", method= RequestMethod.POST)
+    public @ResponseBody String dispatchPost(@PathVariable String endPoint) {
+        logger.info("endpoint " + endPoint);
+        IEndPointDispatcher endPointDispatcher = dispatcherFactory.getEndPointDispatcher(endPoint);
+
+        return endPointDispatcher.dispatchPost();
+    }
+
 }

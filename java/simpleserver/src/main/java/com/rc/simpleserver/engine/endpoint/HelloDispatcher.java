@@ -31,7 +31,7 @@ public class HelloDispatcher implements IEndPointDispatcher {
     public String dispatchGet() {
         String path = "templates/endpoint/hello/get";
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-        StringBuilder mockResponse = null;
+        StringBuilder mockResponse = new StringBuilder("{}");
         try {
             Resource[] resources = resolver.getResources("classpath:templates/endpoint/hello/get/*.*");
             if (resources.length > 0) {
@@ -56,6 +56,39 @@ public class HelloDispatcher implements IEndPointDispatcher {
 
         } catch (IOException e) {
             logger.error("no GET response configured", e);
+        }
+
+        return mockResponse.toString();
+    }
+
+    @Override
+    public String dispatchPost() {
+        PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+        StringBuilder mockResponse = new StringBuilder("{}");
+        try {
+            Resource[] resources = resolver.getResources("classpath:templates/endpoint/hello/post/*.*");
+            if (resources.length > 0) {
+                Resource resource = resources[0];
+
+                InputStream inputStream = resources[0].getInputStream();
+                // Do something with the input stream
+
+                logger.info("resource " + resource);
+                logger.info("resource " + resource.getFilename());
+
+                try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream))) {
+                    mockResponse = new StringBuilder();
+                    bufferedReader.lines().forEach(mockResponse::append);
+
+                    logger.debug("mock response: " + mockResponse.toString());
+                }
+            } else {
+                logger.error("no POST response configured");
+
+            }
+
+        } catch (IOException e) {
+            logger.error("no POST response configured", e);
         }
 
         return mockResponse.toString();

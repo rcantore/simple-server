@@ -4,4 +4,6 @@ public interface IEndPointDispatcher {
     String dispatch();
 
     String dispatchGet();
+
+    String dispatchPost();
 }

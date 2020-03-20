@@ -15,4 +15,10 @@ public class DefaultDispatcher implements IEndPointDispatcher {
     public String dispatchGet() {
         return dispatch();
     }
+
+    @Override
+    public String dispatchPost() {
+        return dispatch();
+    }
+
 }
