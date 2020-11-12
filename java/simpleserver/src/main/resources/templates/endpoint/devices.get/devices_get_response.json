@@ -1,0 +1,332 @@
+{
+    "data": [
+        {
+            "type": "lock",
+            "attributes": {
+                "name": "LS-6i - AC000W006640242",
+                "heartbeat_interval": 1200,
+                "wifi_level": 0,
+                "signal_quality": 0,
+                "connected": true,
+                "alive": true,
+                "power_source": "alkaline_battery",
+                "connected_at": "2020-08-06T23:22:40Z",
+                "serial_number": "AC000W006640242",
+                "wake_wifi": "user_action",
+                "muted": false,
+                "nfc": "no_nfc",
+                "auto_lock": true,
+                "auto_lock_timeout": 20,
+                "programming_code": "123456",
+                "state": "locked",
+                "power_level": 50,
+                "created_at": "2020-08-06T23:26:40Z",
+                "updated_at": "2020-08-06T23:26:40Z",
+                "default_guest_start_time": null,
+                "default_guest_end_time": null,
+                "local_pins": [
+                    "1234"
+                ],
+                "model_id": "94b49882-2b6c-4c4d-9007-eb9c0aa2b6ab",
+                "location_id": "65bcb8eb-7442-48d3-b188-d5e6f6c2de9b",
+                "lock_action_schedule_id": "da177d69-f9ac-4647-8225-fec8dfdea46f"
+            },
+            "id": "ad6a97cb-3b1f-4d5c-9a2e-ba63d1d84a0a",
+            "links": {
+                "self": "http://api.remotelock.dev/devices/ad6a97cb-3b1f-4d5c-9a2e-ba63d1d84a0a",
+                "model": "http://api.remotelock.dev/models/94b49882-2b6c-4c4d-9007-eb9c0aa2b6ab",
+                "location": "http://api.remotelock.dev/locations/65bcb8eb-7442-48d3-b188-d5e6f6c2de9b",
+                "lock_action_schedule": "http://api.remotelock.dev/schedules/da177d69-f9ac-4647-8225-fec8dfdea46f"
+            }
+        },
+        {
+            "type": "thermostat",
+            "attributes": {
+                "name": "LS-60i - 001DC9A03657",
+                "heartbeat_interval": 1200,
+                "wifi_level": 0,
+                "signal_quality": 0,
+                "connected": false,
+                "alive": true,
+                "power_source": "hardwire",
+                "connected_at": "2020-08-06T23:25:40Z",
+                "serial_number": "001DC9A03657",
+                "current_mode": "cool",
+                "target_mode": "auto",
+                "fan_mode": "auto",
+                "hold": false,
+                "temperature": 77.0,
+                "target_temperature": 75.5,
+                "unit": "F",
+                "humidity": 45,
+                "energy_saver": true,
+                "scheduled_target_temperature": 80.0,
+                "desired_target_temperature": 75.5,
+                "created_at": "2020-08-06T23:26:40Z",
+                "updated_at": "2020-08-06T23:26:40Z",
+                "model_id": "e100bfa1-871b-4f66-bee6-74beaf926e4a",
+                "location_id": "65bcb8eb-7442-48d3-b188-d5e6f6c2de9b",
+                "thermostat_schedule_id": "abeb6f23-0164-47dc-b9b1-b25d8ce8917b"
+            },
+            "id": "1ab96e64-9f8c-446c-9c08-d552ca5dc77a",
+            "links": {
+                "self": "http://api.remotelock.dev/devices/1ab96e64-9f8c-446c-9c08-d552ca5dc77a",
+                "model": "http://api.remotelock.dev/models/e100bfa1-871b-4f66-bee6-74beaf926e4a",
+                "location": "http://api.remotelock.dev/locations/65bcb8eb-7442-48d3-b188-d5e6f6c2de9b",
+                "thermostat_schedule": "http://api.remotelock.dev/schedules/abeb6f23-0164-47dc-b9b1-b25d8ce8917b"
+            },
+            "meta": {
+                "restricted_actions": [
+                    "replace"
+                ]
+            }
+        },
+        {
+            "type": "lock",
+            "attributes": {
+                "name": "LS-DB500i - 20F85E00B69W",
+                "heartbeat_interval": 1200,
+                "wifi_level": 0,
+                "signal_quality": 2,
+                "connected": false,
+                "alive": true,
+                "power_source": "alkaline_battery",
+                "connected_at": "2020-08-06T23:24:40Z",
+                "serial_number": "20F85E00B69W",
+                "wake_wifi": "user_action",
+                "muted": false,
+                "nfc": "no_nfc",
+                "auto_lock": true,
+                "auto_lock_timeout": 20,
+                "programming_code": "123456",
+                "state": "unlocked",
+                "power_level": 5,
+                "created_at": "2020-08-06T23:26:40Z",
+                "updated_at": "2020-08-06T23:26:40Z",
+                "default_guest_start_time": null,
+                "default_guest_end_time": null,
+                "local_pins": [
+                    "1234"
+                ],
+                "model_id": "b52f5509-d0ce-4743-a287-3da3c92c7fba",
+                "location_id": "65bcb8eb-7442-48d3-b188-d5e6f6c2de9b"
+            },
+            "id": "5a86a958-f91b-42b8-8e3e-36c55578aea8",
+            "links": {
+                "self": "http://api.remotelock.dev/devices/5a86a958-f91b-42b8-8e3e-36c55578aea8",
+                "model": "http://api.remotelock.dev/models/b52f5509-d0ce-4743-a287-3da3c92c7fba",
+                "location": "http://api.remotelock.dev/locations/65bcb8eb-7442-48d3-b188-d5e6f6c2de9b"
+            },
+            "meta": {
+                "restricted_actions": [
+                    "replace"
+                ]
+            }
+        },
+        {
+            "type": "resort_lock",
+            "attributes": {
+                "name": "RL-4000 - AU95VR810B4FBE01",
+                "default_guest_start_time": null,
+                "default_guest_end_time": null,
+                "created_at": "2020-08-06T23:26:40Z",
+                "updated_at": "2020-08-06T23:26:40Z",
+                "serial_number": "AU95VR810B4FBE01",
+                "model_id": "048f7949-9574-477a-b055-3aa6d657163a",
+                "location_id": "65bcb8eb-7442-48d3-b188-d5e6f6c2de9b"
+            },
+            "id": "71976967-12b5-4f80-97d5-d39ee23b5ae1",
+            "links": {
+                "self": "http://api.remotelock.dev/devices/71976967-12b5-4f80-97d5-d39ee23b5ae1",
+                "model": "http://api.remotelock.dev/models/048f7949-9574-477a-b055-3aa6d657163a",
+                "location": "http://api.remotelock.dev/locations/65bcb8eb-7442-48d3-b188-d5e6f6c2de9b"
+            }
+        },
+        {
+            "type": "power_plug",
+            "attributes": {
+                "name": "LS-P50i - 20F85EAU4W1F",
+                "heartbeat_interval": 1200,
+                "wifi_level": 0,
+                "signal_quality": 0,
+                "connected": true,
+                "alive": true,
+                "power_source": "hardwire",
+                "connected_at": "2020-08-06T23:25:40Z",
+                "serial_number": "20F85EAU4W1F",
+                "on": true,
+                "voltage": 120.0,
+                "power": 4.5,
+                "power_factor": 0.57,
+                "current": 0.06,
+                "frequency": 59.95,
+                "total_power": 8.75,
+                "occupied": true,
+                "model_id": "de407274-9485-49d6-b813-dd3bd53fecfd",
+                "location_id": "65bcb8eb-7442-48d3-b188-d5e6f6c2de9b",
+                "power_plug_schedule_id": "a5c68041-8633-461f-a35a-b73428484bbb"
+            },
+            "id": "c78b884a-2ae6-4b04-878a-5151f0e84ab5",
+            "links": {
+                "self": "http://api.remotelock.dev/devices/c78b884a-2ae6-4b04-878a-5151f0e84ab5",
+                "model": "http://api.remotelock.dev/models/de407274-9485-49d6-b813-dd3bd53fecfd",
+                "location": "http://api.remotelock.dev/locations/65bcb8eb-7442-48d3-b188-d5e6f6c2de9b",
+                "power_plug_schedule": "http://api.remotelock.dev/schedules/a5c68041-8633-461f-a35a-b73428484bbb"
+            },
+            "meta": {
+                "restricted_actions": [
+                    "replace"
+                ]
+            }
+        },
+        {
+            "type": "acs_door",
+            "attributes": {
+                "name": "Industrial, Kids & Outdoors",
+                "state": "locked",
+                "connected": false,
+                "created_at": "2020-08-06T23:26:40Z",
+                "updated_at": "2020-08-06T23:26:40Z",
+                "model_id": "1c71133c-4c49-40b6-a876-6c6ebf0830a9",
+                "location_id": "65bcb8eb-7442-48d3-b188-d5e6f6c2de9b"
+            },
+            "id": "f0071771-5765-43da-b197-18b1a02fba3e",
+            "links": {
+                "self": "http://api.remotelock.dev/devices/f0071771-5765-43da-b197-18b1a02fba3e",
+                "model": "http://api.remotelock.dev/models/1c71133c-4c49-40b6-a876-6c6ebf0830a9",
+                "location": "http://api.remotelock.dev/locations/65bcb8eb-7442-48d3-b188-d5e6f6c2de9b"
+            }
+        },
+        {
+            "type": "zwave_lock",
+            "attributes": {
+                "name": "IRV",
+                "state": "locked",
+                "connected": true,
+                "power_level": 50,
+                "protocol": "",
+                "created_at": "2020-08-06T23:26:40Z",
+                "updated_at": "2020-08-06T23:26:40Z",
+                "location_id": "65bcb8eb-7442-48d3-b188-d5e6f6c2de9b",
+                "model_id": "66ac3ea3-39a8-4248-8bfe-4b203f94ef64"
+            },
+            "id": "45157c53-07c0-48ff-a82b-832bc481d3f7",
+            "links": {
+                "self": "http://api.remotelock.dev/devices/45157c53-07c0-48ff-a82b-832bc481d3f7",
+                "location": "http://api.remotelock.dev/locations/65bcb8eb-7442-48d3-b188-d5e6f6c2de9b",
+                "model": "http://api.remotelock.dev/models/66ac3ea3-39a8-4248-8bfe-4b203f94ef64"
+            }
+        },
+        {
+            "type": "igloo_lock",
+            "attributes": {
+                "name": "cellar",
+                "location_id": "65bcb8eb-7442-48d3-b188-d5e6f6c2de9b",
+                "model_id": "75e0ff60-9762-498c-8c53-ab8b331b354a"
+            },
+            "id": "e2a7d124-aacb-427a-b2cf-81bb24f240db",
+            "links": {
+                "self": "http://api.remotelock.dev/devices/e2a7d124-aacb-427a-b2cf-81bb24f240db",
+                "location": "http://api.remotelock.dev/locations/65bcb8eb-7442-48d3-b188-d5e6f6c2de9b",
+                "model": "http://api.remotelock.dev/models/75e0ff60-9762-498c-8c53-ab8b331b354a"
+            }
+        },
+        {
+            "type": "schlage_home_lock",
+            "attributes": {
+                "name": "guest room",
+                "state": "locked",
+                "alive": true,
+                "connected": true,
+                "connected_at": "2020-08-06T23:24:40Z",
+                "power_level": 90,
+                "created_at": "2020-08-06T23:26:40Z",
+                "updated_at": "2020-08-06T23:26:40Z",
+                "serial_number": "3100003251782951",
+                "location_id": "65bcb8eb-7442-48d3-b188-d5e6f6c2de9b",
+                "model_id": "4b791e51-6f16-4670-9a7c-cc096483867a"
+            },
+            "id": "acb20a00-2532-423f-99db-7d7d9ea62d1f",
+            "links": {
+                "self": "http://api.remotelock.dev/devices/acb20a00-2532-423f-99db-7d7d9ea62d1f",
+                "location": "http://api.remotelock.dev/locations/65bcb8eb-7442-48d3-b188-d5e6f6c2de9b",
+                "model": "http://api.remotelock.dev/models/4b791e51-6f16-4670-9a7c-cc096483867a"
+            }
+        },
+        {
+            "type": "acs_elevator_floor",
+            "attributes": {
+                "name": "Shoes, Baby & Automotive",
+                "state": "locked",
+                "number": 17,
+                "created_at": "2020-08-06T23:26:40Z",
+                "updated_at": "2020-08-06T23:26:40Z",
+                "connected": true,
+                "model_id": "457f6753-95f2-46f9-9fc2-f74f0f3796f5",
+                "location_id": "65bcb8eb-7442-48d3-b188-d5e6f6c2de9b",
+                "elevator_id": "2c8d43b2-de08-492a-b8c5-132f47e9d82c"
+            },
+            "id": "0b2c2e68-28c9-47f7-af68-6c18a0f691c5",
+            "links": {
+                "self": "http://api.remotelock.dev/devices/0b2c2e68-28c9-47f7-af68-6c18a0f691c5",
+                "model": "http://api.remotelock.dev/models/457f6753-95f2-46f9-9fc2-f74f0f3796f5",
+                "location": "http://api.remotelock.dev/locations/65bcb8eb-7442-48d3-b188-d5e6f6c2de9b",
+                "elevator": "http://api.remotelock.dev/devices/2c8d43b2-de08-492a-b8c5-132f47e9d82c"
+            }
+        },
+        {
+            "type": "schlage_home_lock",
+            "attributes": {
+              "name": "Schalage Home House",
+              "state": "locked",
+              "alive": true,
+              "connected": true,
+              "connected_at": "2020-10-22T22:57:17Z",
+              "power_level": 85,
+              "integration_status": "connected",
+              "integration_id": "3327d330-d8cf-41ef-abdb-a5517e118765",
+              "created_at": "2020-07-13T20:09:32Z",
+              "updated_at": "2020-10-22T23:00:38Z",
+              "serial_number": "99999",
+              "location_id": "3337e19a-8e26-4557-8b11-48c2bf75457b",
+              "model_id": "395c9c0e-1fb5-49ce-89ab-b67f18db3060"
+            },
+            "id": "41d8d558-60a9-4944-9619-fdc6edcf0aff",
+            "links": {
+              "self": "https://api.remotelock.com/devices/41d8d558-60a9-4944-9619-fdc6edcf0aff",
+              "location": "https://api.remotelock.com/locations/3337e19a-8e26-4557-8b11-48c2bf75457b",
+              "model": "https://api.remotelock.com/models/395c9c0e-1fb5-49ce-89ab-b67f18db3060"
+            }
+          },
+          {
+            "type": "lock",
+            "attributes": {
+              "name": "Standard Lock Model",
+              "state": "locked",
+              "alive": true,
+              "connected": true,
+              "connected_at": "2020-10-22T22:01:47Z",
+              "power_level": 77,
+              "integration_status": "connected",
+              "integration_id": "3327d330-d8cf-41ef-abdb-a5517e118765",
+              "created_at": "2020-07-13T20:09:52Z",
+              "updated_at": "2020-10-22T23:00:37Z",
+              "serial_number": "66666",
+              "location_id": "3337e19a-8e26-4557-8b11-48c2bf75457b",
+              "model_id": "15e65f17-83eb-488a-a36b-e4256dab7633"
+            },
+            "id": "c98564ff-30b7-4c4a-94b4-8c14d5836c9c",
+            "links": {
+              "self": "https://api.remotelock.com/devices/c98564ff-30b7-4c4a-94b4-8c14d5836c9c",
+              "location": "https://api.remotelock.com/locations/3337e19a-8e26-4557-8b11-48c2bf75457b",
+              "model": "https://api.remotelock.com/models/15e65f17-83eb-488a-a36b-e4256dab7633"
+            }
+          }
+    ],
+    "meta": {
+        "page": 1,
+        "per_page": 25,
+        "total_count": 10,
+        "total_pages": 1
+    }
+}

@@ -1,8 +1,7 @@
 package com.rc.simpleserver.engine.endpoint.factory;
 
-import com.rc.simpleserver.engine.endpoint.DefaultDispatcher;
-import com.rc.simpleserver.engine.endpoint.HelloDispatcher;
-import com.rc.simpleserver.engine.endpoint.IEndPointDispatcher;
+import com.rc.simpleserver.engine.endpoint.*;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -10,21 +9,58 @@ import org.springframework.stereotype.Component;
 public class DispatcherFactory {
     @Autowired
     HelloDispatcher helloDispatcher;
+    
+    @Autowired
+    ShortTermDispatcher shortTermDispatcher; 
 
     @Autowired
-    DefaultDispatcher defaultDispatcher;
+    ReservationsByArrivalDispatcher reservationsByArrivalDispatcher;
 
+    @Autowired
+    GetGuestMarketingInformationDispatcher getGuestMarketingInformationDispatcher;
+
+    @Autowired
+    AccessPersonsDispatcher accessPersonsDispatcher;
+
+    @Autowired
+    PostToken postToken;
+
+    @Autowired
+    DevicesDispatcher devicesDispatcher;
+    
+    @Autowired
+    DefaultDispatcher defaultDispatcher;
+    
     public IEndPointDispatcher getEndPointDispatcher(String endpointName) {
         IEndPointDispatcher dispatcher;
         switch (endpointName) {
             case "hello":
                 dispatcher = helloDispatcher;
                 break;
+            case "GetShortTermProperty":
+            case "GetShortTermProperties":
+                dispatcher = shortTermDispatcher;
+                break;
+            case "GetReservationsByArrivalDate":
+                dispatcher = reservationsByArrivalDispatcher;
+                break;
+            case "GetGuestMarketingInformation":
+                dispatcher = getGuestMarketingInformationDispatcher;
+                break;
+            case "token":
+                dispatcher = postToken;
+                break;
+            case "devices":
+                dispatcher = devicesDispatcher;
+                break;
+            case "access_persons":
+                dispatcher = accessPersonsDispatcher;
+                break;
             default:
                 dispatcher = defaultDispatcher;
                 break;
         }
-
+        
         return dispatcher;
     }
 }
