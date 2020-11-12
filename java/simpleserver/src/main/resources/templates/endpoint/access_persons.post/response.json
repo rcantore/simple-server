@@ -22,10 +22,10 @@
     },
     "id": "935dd59f-f669-4824-98e5-2e29d670e41d",
     "links": {
-      "self": "http://api.remotelock.dev/access_persons/34cb582c-f7d4-4b3b-bd0c-8d849f9ab42c/accesses/935dd59f-f669-4824-98e5-2e29d670e41d",
-      "access_schedule": "http://api.remotelock.dev/schedules/965596bb-3aa4-42c3-9f69-fa2162481980",
-      "access_person": "http://api.remotelock.dev/access_persons/34cb582c-f7d4-4b3b-bd0c-8d849f9ab42c",
-      "accessible": "http://api.remotelock.dev/devices/eb8b73f5-6f9e-4ae6-a1e5-89377cb810e8"
+      "self": "",
+      "access_schedule": "96bb-3aa4-42c3-9f69-fa2162481980",
+      "access_person": "2c-f7d4-4b3b-bd0c-8d849f9ab42c",
+      "accessible": "ht0e8"
     }
   }
 }
