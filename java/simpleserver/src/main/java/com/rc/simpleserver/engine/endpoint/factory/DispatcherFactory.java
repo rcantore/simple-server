@@ -30,6 +30,9 @@ public class DispatcherFactory {
     
     @Autowired
     DefaultDispatcher defaultDispatcher;
+
+    @Autowired
+    JsonListDispatcher jsonListDispatcher;
     
     public IEndPointDispatcher getEndPointDispatcher(String endpointName) {
         IEndPointDispatcher dispatcher;
@@ -55,6 +58,9 @@ public class DispatcherFactory {
                 break;
             case "access_persons":
                 dispatcher = accessPersonsDispatcher;
+                break;
+            case "jsonlist":
+                dispatcher = jsonListDispatcher;
                 break;
             default:
                 dispatcher = defaultDispatcher;
