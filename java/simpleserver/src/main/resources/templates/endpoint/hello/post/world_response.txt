@@ -1,75 +1,124 @@
 <reservations>
   <reservation>
-    <commissionamount>65.46</commissionamount>
+    <commissionamount>223.62</commissionamount>
     <currencycode>USD</currencycode>
     <customer>
-      <address>2400 sw 106th avenue</address>
+      <address>72 Royal Meadows</address>
       <cc_cvc></cc_cvc>
-      <cc_expiration_date>07/2025</cc_expiration_date>
-      <cc_name>Agent Smith</cc_name>
-      <cc_number>4333933354737333</cc_number>
-      <cc_type>Visa</cc_type>
-      <city>miramar</city>
+      <cc_expiration_date></cc_expiration_date>
+      <cc_name></cc_name>
+      <cc_number></cc_number>
+      <cc_type></cc_type>
+      <city>Kilcock</city>
       <company></company>
-      <countrycode>us</countrycode>
+      <countrycode>ie</countrycode>
       <dc_issue_number></dc_issue_number>
       <dc_start_date></dc_start_date>
-      <email>roberto+fail@hostfully.com</email>
-      <first_name>Agent</first_name>
-      <last_name>Smith</last_name>
-      <remarks></remarks>
-      <telephone>+1 555 555 9068</telephone>
-      <zip>33025</zip>
+      <email>aleck@guest.booking</email>
+      <first_name>Alex</first_name>
+      <last_name>Kitchilof</last_name>
+      <remarks>Approximate time of arrival: between 15:00 and 16:00</remarks>
+      <telephone>+35312133333</telephone>
+      <zip>Kildare</zip>
     </customer>
-    <date>2020-10-27</date>
+    <date>2021-07-30</date>
     <guest_counts>
-      <guest_count count="2" type="adult" />
+      <guest_count count="2"
+                   type="adult" />
+      <guest_count age="10"
+                   count="1"
+                   type="child" />
+      <guest_count age="13"
+                   count="1"
+                   type="child" />
+      <guest_count age="15"
+                   count="1"
+                   type="child" />
     </guest_counts>
     <hotel_id>2062289</hotel_id>
-    <hotel_name>Luxury Denver 30 Day Rentals</hotel_name>
-    <id>2109249430</id>
+    <hotel_name>East River Corporate 30 Day Rentals</hotel_name>
+    <id>2264665130</id>
     <reservation_extra_info>
       <flags>
         <flag name="booker_is_genius" />
       </flags>
     </reservation_extra_info>
-    <room>
-      <arrival_date>2021-01-14</arrival_date>
-      <commissionamount>65.46</commissionamount>
+     <room>
+      <arrival_date>2021-10-31</arrival_date>
+      <commissionamount>101.44</commissionamount>
       <currencycode>USD</currencycode>
-      <departure_date>2021-01-18</departure_date>
-      <extra_info>This apartment has a microwave, washing machine and air conditioning.</extra_info>
-      <facilities>TV, Air conditioning, Hairdryer, Iron, Balcony, Refrigerator, Ironing facilities, Fan, Microwave, Dishwasher, Washing machine, Heating, Kitchen, Cable channels, Kitchenware, Tumble dryer, Wardrobe or closet, Oven, Toaster, Coffee machine, Towels, Linen</facilities>
-      <guest_name>jasmine franklin</guest_name>
+      <departure_date>2021-11-02</departure_date>
+      <extra_info>This apartment has a dishwasher, kitchen and DVD player.</extra_info>
+      <facilities>TV, Air conditioning, Hairdryer, Iron, Balcony, Refrigerator, Desk, Ironing facilities, Free toiletries, DVD player, CD player, Microwave, Dishwasher, Washing machine, Heating, Kitchen, Kitchenware, Tumble dryer, Wardrobe or closet, Oven, Toaster, Barbecue, Coffee machine, Towels, Linen</facilities>
+      <guest_name>Bhakti Talreja</guest_name>
       <id>206228909</id>
-      <info>There is no meal option with this room. Children and Extra Bed Policy: All children are welcome. There is no capacity for extra beds in the room. The maximum number of total guests in a room is 7. There is no capacity for cots in the room.  Deposit Policy: The guest will be charged a prepayment of the total price of the reservation at any time.  Cancellation Policy: The guest can cancel free of charge until 1 day before arrival. The guest will be charged the total price of the reservation if they cancel within 1 day before arrival. If the guest doesn’t show up they will be charged the total price of the reservation. </info>
+      <info>There is no meal option with this room. Children and Extra Bed Policy: All children are welcome. There is no capacity for extra beds in the room. The maximum number of total guests in a room is 7. There is no capacity for cots in the room.  Deposit Policy:   Cancellation Policy:   </info>
       <max_children>0</max_children>
       <meal_plan>There is no meal option with this room.</meal_plan>
-      <name>Apartment with Mountain View</name>
+      <name>Three-Bedroom Apartment</name>
       <numberofguests>2</numberofguests>
-      <price date="2021-01-14" genius_rate="yes" rate_id="17452816" rewritten_from_id="0" rewritten_from_name="10% - Early booker - Oct 18, 2020">61.28</price>
-      <price date="2021-01-15" genius_rate="yes" rate_id="17452816" rewritten_from_id="0" rewritten_from_name="10% - Early booker - Oct 18, 2020">81.93</price>
-      <price date="2021-01-16" genius_rate="yes" rate_id="17452816" rewritten_from_id="0" rewritten_from_name="10% - Early booker - Oct 18, 2020">81.93</price>
-      <price date="2021-01-17" genius_rate="yes" rate_id="17452816" rewritten_from_id="0" rewritten_from_name="10% - Early booker - Oct 18, 2020">61.28</price>
+                <price date="2021-09-11"
+             genius_rate="yes"
+             rate_id="14764794"
+             rewritten_from_id="0"
+             rewritten_from_name="">135.90</price>
       <price_details>
         <guest>
-          <extracomponent amount="150.000000" currency="USD" included="yes" per_night="no" per_person="no" percentage="no" text="Cleaning fee" />
-          <extracomponent amount="63.280900" currency="USD" included="yes" per_night="no" per_person="no" percentage="14.5%" text="Tax" />
-          <total>499.70</total>
+          <extracomponent amount="10.87"
+                          currency="USD"
+                          included="no"
+                          per_night="no"
+                          per_person="no"
+                          percentage="8%"
+                          text="Service charge" />
+          <extracomponent amount="30"
+                          currency="USD"
+                          included="no"
+                          per_night="no"
+                          per_person="no"
+                          percentage="no"
+                          text="Resort fee" />
+          <extracomponent amount="40"
+                          currency="USD"
+                          included="no"
+                          per_night="no"
+                          per_person="no"
+                          percentage="no"
+                          text="Cleaning fee" />
+          <total>135.90</total>
         </guest>
         <hotel>
-          <extracomponent amount="150.000000" currency="USD" included="no" per_night="no" per_person="no" percentage="no" text="Cleaning fee" />
-          <extracomponent amount="63.280900" currency="USD" included="no" per_night="no" per_person="no" percentage="14.5%" text="Tax" />
-          <total>286.42</total>
+          <extracomponent amount="10.87"
+                          currency="USD"
+                          included="no"
+                          per_night="no"
+                          per_person="no"
+                          percentage="8%"
+                          text="Service charge" />
+          <extracomponent amount="30"
+                          currency="USD"
+                          included="no"
+                          per_night="no"
+                          per_person="no"
+                          percentage="no"
+                          text="Resort fee" />
+          <extracomponent amount="40"
+                          currency="USD"
+                          included="no"
+                          per_night="no"
+                          per_person="no"
+                          percentage="no"
+                          text="Cleaning fee" />
+          <total>135.90</total>
         </hotel>
       </price_details>
       <remarks></remarks>
-      <roomreservation_id>3017925137</roomreservation_id>
-      <smoking></smoking>
-      <totalprice>286.42</totalprice>
+      <roomreservation_id>3322950888</roomreservation_id>
+      <smoking>0</smoking>
+      <totalprice>135.90</totalprice>
     </room>
     <status>new</status>
-    <time>19:48:28</time>
-    <totalprice>286.42</totalprice>
+    <time>05:32:00</time>
+    <totalprice>476.28</totalprice>
   </reservation>
 </reservations>

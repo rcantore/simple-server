@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.2.4.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
+	id 'base'
 }
 
 apply plugin: 'java'
@@ -9,6 +10,7 @@ apply plugin: 'war'
 apply plugin: 'idea'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
+apply plugin: 'base'
 
 group = 'com.rc'
 version = '0.0.1-SNAPSHOT'
@@ -16,14 +18,24 @@ sourceCompatibility = '1.8'
 
 repositories {
 	mavenCentral()
+	flatDir {
+		dir 'external-config'
+	}
 }
 
 dependencies {
+
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	compileOnly 'org.projectlombok:lombok:1.18.16'
+	annotationProcessor 'org.projectlombok:lombok:1.18.16'
+
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+
+	annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
 }
 
 test {

@@ -1,5 +1,25 @@
 {
-    "msg": "hello world",
-    "source": "file template",
-    "random_numner": 34
+    "keys": [
+        {
+            "kty": "EC",
+            "crv": "P-256",
+            "kid": "78fc5956-8bcd-45d0-835f-90cea2da7ac4",
+            "x": "PWQNQVJ8YrDbiDKADrxnVJS3A8SMCB-8tZ2x8T_MZiE=",
+            "y": "e1VmvTcyz4fJenyw0InJOB-5slOzQbtWwmNMIc8dr_8="
+        },
+        {
+            "kty": "EC",
+            "crv": "P-256",
+            "kid": "9418708f-6267-4d3f-a13f-3958b1929aba",
+            "x": "wH47xzp1zGFyup9giIVhe3N_uBeClOevWwJSr1BWfOU=",
+            "y": "jGKU6SdRkHaI0I-YpAsjhoE7k_pB0yMvoU3N0SS05DY="
+        },
+        {
+            "kty": "EC",
+            "crv": "P-256",
+            "kid": "357cc2c2-c1b1-4928-815b-59de8cb10c6e",
+            "x": "Ev4Wo1lgiPkDa8nHHNVqVaJBAWCrsEZ7wKHeJGw9q-8=",
+            "y": "Gx09DqMqpbV8HWSMAHNhiXAc_rkRRjwUybIMcb8eGWE="
+        }
+    ]
 }
