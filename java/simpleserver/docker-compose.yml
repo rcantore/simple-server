@@ -1,0 +1,14 @@
+version: '3'
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+
+    ports:
+      - "8080:8080"
+    entrypoint: ["java", "-classpath", "/external-config/", "-jar","simpleserver-0.0.1-SNAPSHOT.war"]
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    volumes:
+      - ./external-config:/external-config
